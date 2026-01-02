@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-productos',
   standalone: true,
-  imports: [],
-  templateUrl: './admin-productos.html',
-  styleUrl: './admin-productos.css',
-})
-export class AdminProductos {
+  template: `
+    <h1>📦 Administración de Productos</h1>
 
-}
+    <ul>
+      <li>✔ Crear productos</li>
+      <li>✔ Editar productos</li>
+      <li>✔ Gestionar stock</li>
+      <li>✔ Desactivar sin eliminar</li>
+    </ul>
+  `
+})
+export class AdminProductos {}

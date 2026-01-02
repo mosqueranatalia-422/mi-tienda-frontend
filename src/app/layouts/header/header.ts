@@ -47,4 +47,16 @@ export class HeaderComponent implements DoCheck {
     this.auth.logout();
     this.router.navigate(['/login']);
   }
+
+  // 👉 NUEVO — abrir catálogos PDF en pestaña nueva
+ abrirPDF(ruta: string) {
+
+  // Si ya trae /assets no lo duplicamos
+  const finalPath = ruta.startsWith('/assets')
+    ? ruta
+    : '/assets/' + ruta.replace(/^\/?assets\//, '');
+
+  window.open(finalPath, '_blank');
+}
+
 }

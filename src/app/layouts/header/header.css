@@ -16,7 +16,7 @@ html, body {
   left: 0;
   height: 70px;
   width: 100%;
-  background-color: #f7b2cf;
+  background-color: #fdeef1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@ html, body {
   background: none;
   border: none;
   cursor: pointer;
-  color: white;
+  color: rgb(5, 5, 5);
   .floating-element {
   display: none; /* Esto elimina el elemento flotante */
 }
@@ -41,7 +41,7 @@ html, body {
   font-weight: bold;
   left: 35px;
   padding: 5px;
-  color: white;
+  color: #d57283;
 }
 
 .menu {
@@ -54,7 +54,7 @@ position: absolute;
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 23px; 
 }
@@ -73,7 +73,7 @@ position: absolute;
   gap: 59px;
   left: 78%;
   top: 15px;
-  background-color: #f86c94;
+  background-color: #d57283;
   color: white;
   padding: 5px 12px;
   border-radius: 20px;
@@ -110,7 +110,7 @@ position: absolute;
 }
 
 .login-btn {
-  background-color: white;
+  background-color: rgb(2, 2, 2);
   border: none;
   padding: 6px 14px;
   border-radius: 20px;

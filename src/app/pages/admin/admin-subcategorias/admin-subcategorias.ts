@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-subcategorias',
   standalone: true,
-  imports: [],
-  templateUrl: './admin-subcategorias.html',
-  styleUrl: './admin-subcategorias.css',
+  template: `
+    <h1>🗂 Gestión de Subcategorías</h1>
+    <p>Relacionadas con sus categorías</p>
+  `
 })
-export class AdminSubcategorias {
-
-}
+export class AdminSubcategorias {}

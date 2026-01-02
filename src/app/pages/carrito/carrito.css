@@ -5,17 +5,12 @@
 
 .titulo-carrito {
   text-align: center;
-  color: #ff4fa3;
-  font-size: 26px;
-  margin-bottom: 25px;
-  font-weight: 800;
+  color: #d57283;
+  font-size: 30px;
+  margin-top: 70px;
 }
 
-.carrito-vacio {
-  text-align: center;
-  color: #777;
-}
-
+/* GRID TABLA */
 .carrito-grid {
   display: grid;
   grid-template-columns: 1.2fr .4fr .4fr .4fr;
@@ -37,7 +32,7 @@
   display: contents;
 }
 
-/* Producto */
+/* PRODUCTO */
 .producto-info {
   display: flex;
   gap: 15px;
@@ -73,7 +68,7 @@
   font-weight: 600;
 }
 
-/* Cantidad */
+/* CANTIDAD */
 .cantidad-box {
   display: flex;
   justify-content: center;
@@ -94,7 +89,7 @@
   border-color: #ff4fa3;
 }
 
-/* Resumen */
+/* RESUMEN */
 .resumen {
   text-align: right;
   margin-top: 30px;
@@ -105,8 +100,29 @@
   font-weight: 900;
 }
 
+/* 🔹 CONTENEDOR FLEX DE BOTONES */
+.botones-carrito {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+/* BOTÓN VACIAR */
+.btn-vaciar {
+  background: #d4d4d4;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-vaciar:hover {
+  background: #eecfcf;
+}
+
+/* BOTÓN PAGAR */
 .btn-pagar {
-  background: #ff4fa3;
+  background: #d57283;
   color: white;
   border: none;
   padding: 12px 40px;
@@ -116,26 +132,7 @@
 }
 
 .btn-pagar:hover {
-  opacity: .9;
-}
-
-.seguir {
-  display: block;
-  margin-top: 8px;
-  color: #666;
-}
-
-.btn-vaciar {
-  margin-right: 10px;
-  background: #ffd4d4;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.btn-vaciar:hover {
-  background: #ffb3b3;
+  opacity: .85;
 }
 
 button[disabled] {
@@ -143,9 +140,7 @@ button[disabled] {
   cursor: not-allowed;
 }
 
-
-/*carrito responsive*/
-
+/* 🧩 CARRITO VACÍO */
 .empty-cart-container {
   --shadow: 0 5px 15px #08080826;
   --shadow-active: 0 5px 5px #0e0d0d26;
@@ -163,21 +158,10 @@ button[disabled] {
   box-shadow: var(--shadow);
   transition: .2s ease all;
   max-width: 500px;
-  top: 100px;
 }
 
 .empty-cart-container:hover {
   box-shadow: var(--shadow-active);
-}
-
-.text-content {
-  font-size: 18px;
-  margin-bottom: 1rem;
-  color: black;
-}
-
-.cart-icon-box {
-  margin-bottom: 1rem;
 }
 
 .cart-icon {
@@ -198,13 +182,11 @@ button[disabled] {
   font-weight: 600;
   background: #ff7cac;
   border: none;
-  text-decoration: none;
   color: white;
   cursor: pointer;
-  transition: .2s;
 }
 
 .btn-primary:hover {
-  box-shadow: var(--shadow);
   transform: translateY(-1px);
+  background: #fcb6cc;
 }
